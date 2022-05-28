@@ -5,6 +5,20 @@
   padding: 0;
 }
 
+:root.dark {
+  --body-bgColor: hsl(0, 0%, 90%);
+  --header-txtColor: hsl(60, 10%, 20%);
+  --screen-bgColor: hsl(0, 0%, 93%);
+  --keypad-bgColor: hsl(0, 5%, 81%);
+  --delKey-bgColor: hsl(185, 42%, 37%);
+  --mainKeys-bgColor: hsl(45, 7%, 89%);
+  --eqlKey-bgColor: hsl(25, 98%, 40%);
+  --keyTxt-color: hsl(60, 10%, 20%);
+  --keyshadow-bgColor: hsl(35, 10%, 60%);
+  --delKeyshadow-bgColor: hsl(185, 58%, 25%);
+  --eqlKetshadow-bgColor: hsl(25, 99%, 27%);
+}
+
 :root,
 :root.light {
   --body-bgColor: hsl(222, 26%, 31%);
@@ -18,20 +32,6 @@
   --keyshadow-bgColor: hsl(28, 15%, 65%);
   --eqlKeyshadow-bgColor: hsl(6, 70%, 34%);
   --delKeyshadow-bgColor: hsl(224, 28%, 35%);
-}
-
-:root.dark {
-  --body-bgColor: hsl(0, 0%, 90%);
-  --header-txtColor: hsl(60, 10%, 20%);
-  --screen-bgColor: hsl(0, 0%, 93%);
-  --keypad-bgColor: hsl(0, 5%, 81%);
-  --delKey-bgColor: hsl(185, 42%, 37%);
-  --mainKeys-bgColor: hsl(45, 7%, 89%);
-  --eqlKey-bgColor: hsl(25, 98%, 40%);
-  --keyTxt-color: hsl(60, 10%, 20%);
-  --keyshadow-bgColor: hsl(35, 10%, 60%);
-  --delKeyshadow-bgColor: hsl(185, 58%, 25%);
-  --eqlKetshadow-bgColor: hsl(25, 99%, 27%);
 }
 
 :root.magentaNeon {
@@ -67,6 +67,7 @@ body {
   background-color: var(--delKey-bgColor);
   border-radius: 12px;
   box-shadow: 0 4px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 0 12px 0 12px;
 }
 
 header {
@@ -223,7 +224,6 @@ header h1 {
 #del {
   font-size: 16px;
 }
-
 
 #del, #clear-entry {
   color: #fff;
