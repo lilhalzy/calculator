@@ -140,6 +140,8 @@ header h1 {
 .sml {
   display: grid;
   grid-template-columns: 60px 60px 60px 60px;
+  row-gap: 16px;
+  column-gap: 14px;
 }
 
 .med {
@@ -155,4 +157,5 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
 }
