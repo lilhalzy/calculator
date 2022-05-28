@@ -57,6 +57,16 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 10vh;
+}
+
+.container {
+  display: flexbox;
+  width: 320px;
+  height: 700px;
+  background-color: var(--delKey-bgColor);
+  border-radius: 12px;
+  box-shadow: 0 4px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 header {
@@ -71,6 +81,7 @@ header {
 
 header h1 {
   font-size: 30px;
+  margin: 14px 0 0 10px;
 }
 
 .toggleDesignMain {
@@ -92,11 +103,11 @@ header h1 {
 
 .theme {
   align-self: flex-end;
-  /* justify-content: space-between; */
-  margin-bottom: 5px;
+  justify-content: space-between;
+  margin: 0 0 5px 8px;
   text-transform: uppercase;
   font-weight: bolder;
-  margin-left: 8px;
+  
 }
 
 .themeToggle {
@@ -105,9 +116,9 @@ header h1 {
   align-items: flex-start;
   border-radius: 3rem;
   background-color: var(--keypad-bgColor);
-  width: 70px;
-  padding-top: 6px;
-  padding-bottom: 2px;
+  width: 66px;
+  padding: 6px 1px 2px 1px;
+  margin-right: 10px;
 }
 
 .custom-ratio-btn {
@@ -147,7 +158,7 @@ header h1 {
   color: var(--header-txtColor);
   text-align: end;
   padding: 20px;
-  width: 285px;
+  width: 281px;
   height: 30px;
   border-radius: 10px;
   font-size: 26px;
