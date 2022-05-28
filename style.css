@@ -1,3 +1,21 @@
+
 * {
-  background-color: #555;
+  margin: 0;
+  padding: 0;
 }
+
+:root,
+:root.one {
+  --body-bgColor: hsl(222, 26%, 31%);
+  --header-txtColor: #fff;
+  --screen-bgColor: hsl(224, 36%, 15%);
+  --keypad-bgColor: hsl(223, 32%, 20%);
+  --delKey-bgColor: hsl(225, 21%, 45%);
+  --mainKeys-bgColor: hsl(30, 25%, 85%);
+  --eqlKey-bgColor: hsl();
+  --keyTxt-color: hsl(221, 15%, 30%);
+  --keyshadow-bgColor: hsl(28, 15%, 65%);
+  --delKeyshadow-bgColor: hsl(224, 28% 35%);
+  --eqlKetshadow-bgColor: hsl(6, 70%, 34%);
+}
+
