@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Outfit:wght@300&family=Red+Hat+Text&display=swap");
 
 * {
   margin: 0;
@@ -19,3 +20,12 @@
   --eqlKetshadow-bgColor: hsl(6, 70%, 34%);
 }
 
+body {
+  background-color: var(--body-bgColor);
+  font-family: "Koulen", cursive;
+  font-family: "Outfit", sans-serif;
+  font-family: "Red Hat Text", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
