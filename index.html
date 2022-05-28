@@ -9,5 +9,30 @@
     <title>Calculator</title>
   </head>
   <body>
+    <header>
+      <h1>calc.</h1>
+      <p class="theme">theme</p>
+      <div class="toggleDesign">
+        <div class="themeNum">
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+        </div>
+        <div class="themeToggle">
+          <label class="custom-radio-btn">
+            <input type="radio" id="light" name="toggle-state" onclick="setTheme(light)" checked>
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom-radio-btn">
+            <input type="radio" id="dark" name="toggle-state" onclick="setTheme(dark)" >
+            <span class="checkmark"></span>
+          </label>
+          <label class="custom-radio-btn">
+            <input type="radio" id="neon" name="toggle-state" onclick="setTheme(neon)" >
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
