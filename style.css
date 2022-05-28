@@ -6,18 +6,46 @@
 }
 
 :root,
-:root.one {
+:root.light {
   --body-bgColor: hsl(222, 26%, 31%);
   --header-txtColor: #fff;
   --screen-bgColor: hsl(224, 36%, 15%);
   --keypad-bgColor: hsl(223, 32%, 20%);
-  --delKey-bgColor: hsl(225, 21%, 45%);
+  --delKey-bgColor: hsl(225, 21%, 50%);
   --mainKeys-bgColor: hsl(30, 25%, 85%);
-  --eqlKey-bgColor: hsl();
+  --eqlKey-bgColor: hsl(6, 63%, 50%);
   --keyTxt-color: hsl(221, 15%, 30%);
   --keyshadow-bgColor: hsl(28, 15%, 65%);
-  --delKeyshadow-bgColor: hsl(224, 28% 35%);
-  --eqlKetshadow-bgColor: hsl(6, 70%, 34%);
+  --eqlKeyshadow-bgColor: hsl(224, 28%, 35%);
+  --delKetshadow-bgColor: hsl(6, 70%, 34%);
+}
+
+:root.dark {
+  --body-bgColor: hsl(0, 0%, 90%);
+  --header-txtColor: hsl(60, 10%, 20%);
+  --screen-bgColor: hsl(0, 0%, 93%);
+  --keypad-bgColor: hsl(0, 5%, 81%);
+  --delKey-bgColor: hsl(185, 42%, 37%);
+  --mainKeys-bgColor: hsl(45, 7%, 89%);
+  --eqlKey-bgColor: hsl(25, 98%, 40%);
+  --keyTxt-color: hsl(60, 10%, 20%);
+  --keyshadow-bgColor: hsl(35, 10%, 60%);
+  --delKeyshadow-bgColor: hsl(185, 58%, 25%);
+  --eqlKetshadow-bgColor: hsl(25, 99%, 27%);
+}
+
+:root.neon {
+  --body-bgColor: hsl(268, 75%, 9%);
+  --header-txtColor: hsl(52, 100%, 62%);
+  --screen-bgColor: hsl(268, 71%, 12%);
+  --keypad-bgColor: hsl(268, 71%, 12%);
+  --delKey-bgColor: hsl(281, 89%, 26%);
+  --mainKeys-bgColor: hsl(268, 47%, 21%);
+  --eqlKey-bgColor: hsl(176, 100%, 44%);
+  --keyTxt-color: hsl(52, 100%, 62%);
+  --keyshadow-bgColor: hsl(290, 70%, 36%);
+  --delKeyshadow-bgColor: hsl(285, 91%, 50%);
+  --eqlKetshadow-bgColor: hsl(177, 92%, 70%);
 }
 
 body {
@@ -34,10 +62,11 @@ body {
 header {
   color: var(--header-txtColor);
   height: 15vh;
-  width: 20rem;
+  width: 325px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  user-select: none;
 }
 
 header h1 {
@@ -47,7 +76,7 @@ header h1 {
 .toggleDesignMain {
   display: flex;
   justify-content: space-between;
-  width: 9.0625rem;
+  width: 145px;
   font-size: 12px;
 }
 
@@ -55,14 +84,18 @@ header h1 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
+  word-spacing: 12px;
+  margin-left: 12px;  
 }
+
 
 .theme {
   align-self: flex-end;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-bottom: 5px;
   text-transform: uppercase;
   font-weight: bolder;
+  margin-left: 8px;
 }
 
 .themeToggle {
@@ -70,10 +103,10 @@ header h1 {
   justify-content: center;
   align-items: flex-start;
   border-radius: 3rem;
-  background-color:  var(--keypad-bgColor);
+  background-color: var(--keypad-bgColor);
   width: 70px;
   padding-top: 6px;
-  padding-bottom: 6px;
+  padding-bottom: 2px;
 }
 
 .custom-ratio-btn {
@@ -116,8 +149,10 @@ header h1 {
   width: 285px;
   height: 30px;
   border-radius: 10px;
-  /* scroll-behavior: none;
-  scrollbar-width: none; */
+  font-size: 26px;
+  font-weight: bold;
+  scroll-behavior: none;
+  scrollbar-width: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -135,6 +170,8 @@ header h1 {
   height: 23rem;
   padding-bottom: 25px;
   padding-top: 25px;
+  user-select: none;
+  text-transform: uppercase;
 }
 
 .sml {
@@ -158,4 +195,34 @@ header h1 {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  font-size: 20px;
+  color: var(--keyTxt-color);
+  cursor: pointer;
+  box-shadow: 0 4px 0 var(--keyshadow-bgColor);
+}
+
+.med .box {
+  color: #fff;
+  border-radius: 5px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#del {
+  font-size: 16px;
+}
+
+#del, #clear-entry {
+  color: #fff;
+  background-color: var(--delKey-bgColor);
+  box-shadow: 0 4px 0 var(--delKeyshadow-bgColor);
+}
+
+#equal {
+  background-color: var(--eqlKey-bgColor);
+  box-shadow: 0 4px 0 var(--eqlKetshadow-bgColor);
+  font-size:55px;
 }
