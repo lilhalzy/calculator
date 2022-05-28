@@ -28,4 +28,131 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  color: var(--header-txtColor);
+  height: 15vh;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 30px;
+}
+
+.toggleDesignMain {
+  display: flex;
+  justify-content: space-between;
+  width: 9.0625rem;
+  font-size: 12px;
+}
+
+.themeNum {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.theme {
+  align-self: flex-end;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.themeToggle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 3rem;
+  background-color:  var(--keypad-bgColor);
+  width: 70px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.custom-ratio-btn {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 4px;
+}
+
+.custom-radio-btn input {
+  display: none;
+}
+
+.custom-radio-btn .checkmark {
+  width: 15px;
+  height: 15px;
+  background-color: var(--eqlKey-bgColor);
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.custom-radio-btn input:checked + .checkmark {
+  opacity: 1;
+  display: inline-block;
+}
+
+#display {
+  background-color: var(--screen-bgColor);
+  border: none;
+  outline: none;
+  color: var(--header-txtColor);
+  text-align: end;
+  padding: 20px;
+  width: 285px;
+  height: 30px;
+  border-radius: 10px;
+  /* scroll-behavior: none;
+  scrollbar-width: none; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.calculate{
+  background-color: var(--keypad-bgColor) ;
+  margin-top: 1.7rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 23rem;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+.sml {
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px;
+}
+
+.med {
+  display: grid;
+  grid-template-columns: 134px 134px;
+  column-gap: 14px;
+  margin-top: 12px;
+}
+
+.sml .box {
+  background-color: var(--mainKeys-bgColor);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
