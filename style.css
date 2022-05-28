@@ -16,8 +16,8 @@
   --eqlKey-bgColor: hsl(6, 63%, 50%);
   --keyTxt-color: hsl(221, 15%, 30%);
   --keyshadow-bgColor: hsl(28, 15%, 65%);
-  --eqlKeyshadow-bgColor: hsl(224, 28%, 35%);
-  --delKetshadow-bgColor: hsl(6, 70%, 34%);
+  --eqlKeyshadow-bgColor: hsl(6, 70%, 34%);
+  --delKeyshadow-bgColor: hsl(224, 28%, 35%);
 }
 
 :root.dark {
@@ -86,6 +86,7 @@ header h1 {
   margin-bottom: 5px;
   word-spacing: 12px;
   margin-left: 12px;  
+  font-weight: bolder;
 }
 
 
@@ -131,7 +132,7 @@ header h1 {
   border-radius: 50%;
   display: inline-block;
   opacity: 0;
-  transition: opacity .3s ease;
+  transition: opacity .2s ease;
 }
 
 .custom-radio-btn input:checked + .checkmark {
@@ -211,9 +212,10 @@ header h1 {
   cursor: pointer;
 }
 
-#del {
+/* #del {
   font-size: 16px;
-}
+} */
+
 
 #del, #clear-entry {
   color: #fff;
@@ -223,6 +225,6 @@ header h1 {
 
 #equal {
   background-color: var(--eqlKey-bgColor);
-  box-shadow: 0 4px 0 var(--eqlKetshadow-bgColor);
+  box-shadow: 0 4px 0 var(--eqlKeyshadow-bgColor);
   font-size:55px;
 }
