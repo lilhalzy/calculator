@@ -181,10 +181,6 @@ input {
   height: 23rem;
   padding: 25px 0 25px 0;
   user-select: none;
-}
-
-button {
-  border: 0;
   text-transform: uppercase;
 }
 
@@ -225,15 +221,58 @@ button {
   cursor: pointer;
 }
 
-#del, #clear-entry {
+.del, .clear-entry {
   color: #fff;
   font-size: 18px;
   background-color: var(--delKey-bgColor);
   box-shadow: 0 4px 0 var(--delKeyshadow-bgColor);
 }
 
-#equal {
+.equal {
   background-color: var(--eqlKey-bgColor);
   box-shadow: 0 4px 0 var(--eqlKeyshadow-bgColor);
-  font-size:55px;
+  font-size: 55px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: unset;
+    width: auto;
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .calculate{
+    margin: .5rem 0 0 0;
+    width: 18rem;
+    height: 21rem;
+    padding: 20px 0 20px 0;
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+  }
+  input {
+    padding: 12px;
+    width: 264px;
+    font-size: 22px;
+    display: flex;
+  }
+  header {
+    height: 12vh;
+    width: 285px;
+  }
+  header h1 {
+    font-size: 24px;
+  }
+  .theme {
+    font-size: 10px;
+    margin: 0 0 6px 16px;
+  }
+  header p {
+    font-size: 13px;
+  }
+  .sml .box {
+    height: 50px;
+    width: 50px;
+  }
 }
