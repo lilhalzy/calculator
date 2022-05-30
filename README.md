@@ -1,5 +1,3 @@
-## calculator
-# Work is in progress...
-CSS in the making 
-</br>
+# calculator
+## Work is in progress...
 ![](https://www.idiavoli.com/static/staytune.gif)
