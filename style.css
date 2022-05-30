@@ -63,7 +63,7 @@ body {
 .container {
   display: flexbox;
   width: 320px;
-  height: 700px;
+  height: 680px;
   background-color: var(--delKey-bgColor);
   border-radius: 12px;
   box-shadow: 0 4px 2px 4px rgba(0, 0, 0, 0.2);
@@ -99,7 +99,6 @@ header h1 {
   word-spacing: 12px;
   font-weight: bolder;
 }
-
 
 .theme {
   align-self: flex-end;
@@ -142,7 +141,7 @@ header h1 {
   border-radius: 50%;
   display: inline-block;
   opacity: 0;
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
 }
 
 .custom-radio-btn input:checked + .checkmark {
@@ -169,8 +168,8 @@ input {
   align-items: center;
 }
 
-.calculate{
-  background-color: var(--keypad-bgColor) ;
+.calculate {
+  background-color: var(--keypad-bgColor);
   margin-top: 1.7rem;
   border-radius: 10px;
   display: flex;
@@ -221,7 +220,8 @@ input {
   cursor: pointer;
 }
 
-.del, .clear-entry {
+.del,
+.clear-entry {
   color: #fff;
   font-size: 18px;
   background-color: var(--delKey-bgColor);
@@ -242,8 +242,8 @@ input {
     padding-bottom: 40px;
   }
 
-  .calculate{
-    margin: .5rem 0 0 0;
+  .calculate {
+    margin: 0.5rem 0 0 0;
     width: 18rem;
     height: 21rem;
     padding: 20px 0 20px 0;
@@ -274,5 +274,16 @@ input {
   .sml .box {
     height: 50px;
     width: 50px;
+  }
+  .equal {
+    width: 110px;
+  }
+  .clear-entry {
+    width: 110px;
+  }
+  .med {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
