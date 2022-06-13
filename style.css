@@ -135,8 +135,9 @@ header h1 {
 }
 
 .custom-radio-btn .checkmark {
-  width: 15px;
-  height: 15px;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 .1rem;
   background-color: var(--eqlKey-bgColor);
   border-radius: 50%;
   display: inline-block;
@@ -272,8 +273,11 @@ input {
     font-size: 13px;
   }
   .sml .box {
-    height: 50px;
-    width: 50px;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .equal {
     width: 110px;
