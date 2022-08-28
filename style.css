@@ -235,59 +235,17 @@ header h1 {
   font-size: 55px;
 }
 
-/* @media screen and (max-width: 500px) {
+@media (max-width: 767px) {
   .container {
-    display: unset;
-    width: auto;
-    height: auto;
+    width: 20rem;
+    height: 40rem;
     padding-bottom: 40px;
   }
+}
 
-  .calculate {
-    margin: 0.5rem 0 0 0;
-    width: 18rem;
-    height: 21rem;
-    padding: 20px 0 20px 0;
-    display: absolute;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 479px) {
+  .container{
+    height: 70vh;
+    width: 60vw;
   }
-  input {
-    padding: 12px;
-    width: 264px;
-    font-size: 22px;
-    display: flex;
-  }
-  header {
-    height: 12vh;
-    width: 285px;
-  }
-  header h1 {
-    font-size: 24px;
-  }
-  .theme {
-    font-size: 10px;
-    margin: 0 0 6px 16px;
-  }
-  header p {
-    font-size: 13px;
-  }
-  .sml .box {
-    height: 3rem;
-    width: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .equal {
-    width: 110px;
-  }
-  .clear-entry {
-    width: 110px;
-  }
-  .med {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-} */
+}
