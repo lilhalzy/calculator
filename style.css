@@ -57,7 +57,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 10vh;
+  padding: 16vh;
 }
 
 .container {
@@ -195,7 +195,7 @@ header h1 {
   display: grid;
   grid-template-columns: 134px 134px;
   column-gap: 14px;
-  margin-top: 12px;
+  margin-top: 24px;
 }
 
 .sml .box {
@@ -233,19 +233,4 @@ header h1 {
   background-color: var(--eqlKey-bgColor);
   box-shadow: 0 4px 0 var(--eqlKeyshadow-bgColor);
   font-size: 55px;
-}
-
-@media (max-width: 767px) {
-  .container {
-    width: 20rem;
-    height: 40rem;
-    padding-bottom: 40px;
-  }
-}
-
-@media (max-width: 479px) {
-  .container{
-    height: 70vh;
-    width: 60vw;
-  }
 }
